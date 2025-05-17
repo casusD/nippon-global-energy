@@ -1,0 +1,172 @@
+// colors.scss
+
+$colors-light: (
+	background: (
+		255,
+		255,
+		255,
+	),
+	background-alt: (
+		243,
+		244,
+		246,
+	),
+	foreground: (
+		31,
+		41,
+		55,
+	),
+	foreground-muted: (
+		75,
+		85,
+		99,
+	),
+	primary: (
+		59,
+		130,
+		246,
+	),
+	primary-light: (
+		147,
+		197,
+		253,
+	),
+	primary-dark: (
+		37,
+		99,
+		235,
+	),
+	secondary: (
+		14,
+		165,
+		233,
+	),
+	secondary-light: (
+		103,
+		232,
+		249,
+	),
+	secondary-dark: (
+		3,
+		105,
+		161,
+	),
+	card-bg: (
+		255,
+		255,
+		255,
+	),
+	card-border: (
+		209,
+		213,
+		219,
+	),
+	input-bg: (
+		255,
+		255,
+		255,
+	),
+	input-border: (
+		156,
+		163,
+		175,
+	),
+	header-bg: (
+		255,
+		255,
+		255,
+	),
+	header-border: (
+		229,
+		231,
+		235,
+	),
+);
+
+$colors-dark: (
+	background: (
+		17,
+		24,
+		39,
+	),
+	background-alt: (
+		31,
+		41,
+		55,
+	),
+	foreground: (
+		243,
+		244,
+		246,
+	),
+	foreground-muted: (
+		156,
+		163,
+		175,
+	),
+	primary: (
+		96,
+		165,
+		250,
+	),
+	primary-light: (
+		147,
+		197,
+		253,
+	),
+	primary-dark: (
+		59,
+		130,
+		246,
+	),
+	secondary: (
+		56,
+		189,
+		248,
+	),
+	secondary-light: (
+		103,
+		232,
+		249,
+	),
+	secondary-dark: (
+		14,
+		165,
+		233,
+	),
+	card-bg: (
+		31,
+		41,
+		55,
+	),
+	card-border: (
+		55,
+		65,
+		81,
+	),
+	input-bg: (
+		31,
+		41,
+		55,
+	),
+	input-border: (
+		75,
+		85,
+		99,
+	),
+	header-bg: (
+		17,
+		24,
+		39,
+	),
+	header-border: (
+		55,
+		65,
+		81,
+	),
+);
+
+// Функция для удобного получения цвета из карты и конвертации в rgb()
+@function color($map, $key) {
+	@return rgb(map-get($map, $key)...);
+}

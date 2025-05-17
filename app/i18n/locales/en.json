@@ -1,0 +1,111 @@
+{
+	"header": {
+		"home": "Home",
+		"services": "Services",
+		"about": "About",
+		"contact": "Contact"
+	},
+	"hero": {
+		"title": "Pioneering the Future of Sustainable Energy",
+		"subtitle": "Leading the way in renewable energy solutions and smart grid technology for a sustainable tomorrow",
+		"cta": {
+			"primary": "Our Services",
+			"secondary": "Contact Us"
+		}
+	},
+	"services": {
+		"title": "Our Services",
+		"renewable": {
+			"title": "Renewable Energy",
+			"description": "Solar, wind, and hydroelectric power solutions for sustainable energy generation"
+		},
+		"smartGrid": {
+			"title": "Smart Grid Technology",
+			"description": "Advanced grid management systems for efficient energy distribution"
+		},
+		"storage": {
+			"title": "Energy Storage",
+			"description": "Innovative battery and storage solutions for reliable power supply"
+		}
+	},
+	"solarSystem": {
+		"rooftop": {
+			"title": "How does solar rooftop works?",
+			"benefits": [
+				"Systems are simplifying and producing economical alternatives to expensive and complex systems which are mounted on the roof.",
+				"The existing area is utilized to generate power which saves a lot of sum on sacrificing valuable money over real estate.",
+				"These solar carports increase energy production vastly during your project of clean energy.",
+				"Little to zero maintenance is required by these permanent solar carports and trellis.",
+				"The repair and maintenance service is easily accessible due to the designs and structure.",
+				"The general public and everyday users can be benefited from shaded car parking."
+			]
+		},
+		"carports": {
+			"title": "Benefits of Solar Carports",
+			"benefits": [
+				"Systems are simplifying and producing economical alternatives to expensive and complex systems which are mounted on the roof",
+				"The existing area is utilized to generate power which saves a lot of sum on sacrificing valuable money over real estate.",
+				"These solar carports increase energy production vastly during your project of clean energy.",
+				"Little to zero maintenance is required by these permanent solar carports and trellis.",
+				"The repair and maintenance service is easily accessible due to the designs and structure.",
+				"The general public and everyday users can be benefited from shaded car parking."
+			]
+		}
+	},
+	"about": {
+		"title": "About Us",
+		"description": "Nippon Global Energy is a leading provider of sustainable energy solutions, committed to transforming the way we power our world. With over 15 years of experience, we've been at the forefront of renewable energy innovation.",
+		"stats": {
+			"years": "Years of Experience",
+			"projects": "Projects Completed",
+			"countries": "Countries Served"
+		}
+	},
+	"contact": {
+		"title": "Contact Us",
+		"infoTitle": "Contact Information",
+		"info": {
+			"address": {
+				"title": "Address",
+				"value": "123 Energy Street, Tokyo, Japan"
+			},
+			"phone": {
+				"title": "Phone",
+				"value": "+81 3-1234-5678"
+			},
+			"email": {
+				"title": "Email",
+				"value": "info@nipponglobalenergy.com"
+			}
+		},
+		"social": {
+			"title": "Follow Us"
+		},
+		"form": {
+			"name": "Name",
+			"email": "Email",
+			"phone": "Phone",
+			"budget": "Budget Range",
+			"rating": "Rate our services",
+			"message": "Message",
+			"submit": "Send Message",
+			"success": "Thank you for your message! We'll get back to you soon.",
+			"error": "Something went wrong. Please try again later."
+		}
+	},
+	"footer": {
+		"description": "Leading the way in sustainable energy solutions for a better tomorrow.",
+		"quickLinks": {
+			"title": "Quick Links",
+			"services": "Services",
+			"about": "About",
+			"contact": "Contact"
+		},
+		"legal": {
+			"title": "Legal",
+			"privacy": "Privacy Policy",
+			"terms": "Terms of Service"
+		},
+		"copyright": "© 2024 Nippon Global Energy. All rights reserved."
+	}
+}

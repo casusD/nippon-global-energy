@@ -1,0 +1,109 @@
+@import '../../colors.scss';
+
+.section {
+	padding: 4rem 1rem;
+	background-color: var(--background-alt);
+}
+
+.container {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.flexRowResponsive {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 4rem;
+
+	@media (min-width: 768px) {
+		flex-direction: row;
+	}
+
+	div {
+		width: 100%;
+
+		@media (min-width: 768px) {
+			width: 500px;
+		}
+	}
+
+	h2 {
+		color: var(--secondary);
+	}
+}
+
+.card {
+	margin: 0 auto;
+	width: 90%;
+	background-color: var(--background);
+	border-radius: 1rem;
+	padding: 2rem;
+	margin-bottom: 5rem;
+
+	@media (min-width: 768px) {
+		width: 70%;
+	}
+}
+
+.secondaryCard {
+	padding: 0;
+	justify-content: center;
+	width: 95%;
+	margin: 0 auto;
+
+	img {
+		width: 100%;
+		height: auto;
+		max-height: 470px;
+		object-fit: cover;
+
+		@media (min-width: 768px) {
+			width: 50%;
+			height: 470px;
+		}
+	}
+}
+
+.titleLarge {
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+
+	@media (min-width: 768px) {
+		font-size: 2.25rem;
+	}
+}
+
+.videoWrapper {
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+
+.video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.list {
+	list-style-type: disc;
+	padding-left: 1.5rem;
+	color: var(--text-color);
+
+	& > li {
+		margin-top: 1rem;
+	}
+}
+
+.image {
+	width: 100%;
+	border-radius: 1rem;
+	object-fit: cover;
+}

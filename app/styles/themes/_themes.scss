@@ -1,0 +1,42 @@
+@use './dark' as dark;
+@use './light' as light;
+
+.light-theme {
+	--background: #{light.$background};
+	--background-alt: #{light.$background-alt};
+	--foreground: #{light.$foreground};
+	--foreground-muted: #{light.$foreground-muted};
+	--primary: #{light.$primary};
+	--primary-light: #{light.$primary-light};
+	--primary-dark: #{light.$primary-dark};
+	--secondary: #{light.$secondary};
+	--secondary-light: #{light.$secondary-light};
+	--secondary-dark: #{light.$secondary-dark};
+	--card-bg: #{light.$card-bg};
+	--card-border: #{light.$card-border};
+	--input-bg: #{light.$input-bg};
+	--input-border: #{light.$input-border};
+	--header-bg: #{light.$header-bg};
+	--header-border: #{light.$header-border};
+	--text-color: #{light.$text-color};
+}
+
+.dark-theme {
+	--background: #{dark.$background};
+	--background-alt: #{dark.$background-alt};
+	--foreground: #{dark.$foreground};
+	--foreground-muted: #{dark.$foreground-muted};
+	--primary: #{dark.$primary};
+	--primary-light: #{dark.$primary-light};
+	--primary-dark: #{dark.$primary-dark};
+	--secondary: #{dark.$secondary};
+	--secondary-light: #{dark.$secondary-light};
+	--secondary-dark: #{dark.$secondary-dark};
+	--card-bg: #{dark.$card-bg};
+	--card-border: #{dark.$card-border};
+	--input-bg: #{dark.$input-bg};
+	--input-border: #{dark.$input-border};
+	--header-bg: #{dark.$header-bg};
+	--header-border: #{dark.$header-border};
+	--text-color: #{dark.$text-color};
+}

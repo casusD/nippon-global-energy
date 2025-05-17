@@ -1,0 +1,33 @@
+.button {
+	padding: 8px;
+	border-radius: 8px;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.button:hover {
+	background-color: var(--background-alt);
+}
+
+// @media (prefers-color-scheme: dark) {
+// 	.button:hover {
+// 		background-color: #1f2937;
+// 	}
+// }
+
+.icon {
+	width: 24px;
+	height: 24px;
+	transition: color 0.3s ease;
+	color: var(--text-color);
+}
+
+// .lightIcon {
+// 	color: var(--text-color);
+// }
+
+// .darkIcon {
+// 	color: var(--text-color);
+// }

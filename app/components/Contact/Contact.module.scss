@@ -1,0 +1,215 @@
+.contactSection {
+	padding: 5rem 0;
+	background-color: var(--background);
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.contactContent {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.contactTitle {
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: bold;
+	margin-bottom: 3rem;
+	color: var(--secondary);
+}
+
+.contactGrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 3rem;
+}
+
+.contactInfoSection {
+	background-color: var(--background-alt);
+	padding: 2rem;
+	border-radius: 1rem;
+	box-shadow: 0 0 6px 4px rgba(255, 255, 255, 0.1);
+	height: fit-content;
+	text-align: center;
+}
+
+.contactInfoTitle {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 2rem;
+	color: var(--secondary);
+}
+
+.contactInfoGrid {
+	display: grid;
+	gap: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.contactInfoItem {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.contactInfoLabel {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	color: var(--text-color);
+}
+
+.contactSocialIcon {
+	width: 1.25rem;
+	height: 1.25rem;
+	color: var(--primary);
+}
+
+.contactInfoLink {
+	color: var(--text-color);
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.contactInfoLink:hover {
+	color: var(--primary);
+}
+
+.contactInfoValue {
+	color: var(--text-color);
+}
+
+.contactSocialLinks {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin-top: 2rem;
+}
+
+.contactSocialLinks a {
+	color: var(--text-color);
+	transition: color 0.3s ease;
+}
+
+.contactSocialLinks a:hover {
+	color: var(--primary);
+}
+
+.contactFormSection {
+	background-color: var(--background-alt);
+	padding: 2rem;
+	border-radius: 1rem;
+	box-shadow: 0 0 6px 4px rgba(255, 255, 255, 0.1);
+}
+
+.contactForm {
+	display: grid;
+	gap: 1.5rem;
+}
+
+.contactFormGroup {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.contactLabel {
+	color: var(--text-color);
+	font-weight: 500;
+}
+
+.contactInput,
+.contactTextarea {
+	padding: 0.75rem;
+	border: 1px solid var(--primary);
+	border-radius: 0.5rem;
+	background-color: var(--background);
+	color: var(--text-color);
+	transition: border-color 0.3s ease;
+}
+
+.contactInput:focus,
+.contactTextarea:focus {
+	outline: none;
+	border-color: var(--primary-light);
+}
+
+.contactTextarea {
+	min-height: 150px;
+	resize: none;
+}
+
+.contactRangeLabels {
+	display: flex;
+	justify-content: space-between;
+	color: var(--text-color);
+	font-size: 0.875rem;
+}
+
+.contactSubmitButton {
+	background-color: var(--secondary-dark);
+	color: white;
+	padding: 0.75rem 2rem;
+	border: none;
+	border-radius: 0.5rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.contactSubmitButton:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contactStatusMessage {
+	padding: 1rem;
+	border-radius: 0.5rem;
+	text-align: center;
+}
+
+.contactSuccessMessage {
+	background-color: var(--success-light);
+	color: var(--success);
+}
+
+.contactErrorMessage {
+	background-color: var(--error-light);
+	color: var(--error);
+}
+
+.ratingContainer {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+.ratingStar {
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	color: #ccc;
+	transition: color 0.2s ease;
+}
+
+.ratingStar:hover,
+.ratingStarActive {
+	color: #ffd700;
+}
+
+@media (max-width: 768px) {
+	.contactGrid {
+		grid-template-columns: 1fr;
+	}
+
+	.contactTitle {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
+}

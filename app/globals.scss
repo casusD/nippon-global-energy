@@ -1,0 +1,227 @@
+@use './styles/themes/themes';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+// По умолчанию светлая тема (можешь поменять на .dark)
+body {
+	color: rgb(var(--foreground));
+	background: rgb(var(--background));
+	min-height: 100vh;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	transition: background-color 0.3s ease, color 0.3s ease,
+		border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+	width: 8px;
+}
+::-webkit-scrollbar-track {
+	background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--primary);
+	border-radius: 4px;
+	&:hover {
+		background: var(--primary-dark);
+	}
+}
+
+// Анимации
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slideUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes bounce {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+}
+
+.animate-fade-in {
+	animation: fadeIn 1s ease-out;
+}
+.animate-slide-up {
+	animation: slideUp 1s ease-out;
+}
+.animate-bounce {
+	animation: bounce 2s infinite;
+}
+
+// Glass effect
+.glass {
+	background: rgba(var(--background-alt), 0.8);
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(var(--card-border), 0.2);
+}
+
+// Gradient text
+.gradient-text {
+	background: linear-gradient(
+		135deg,
+		rgb(var(--primary)),
+		rgb(var(--secondary))
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+// Card styles
+.card {
+	padding: 1.5rem;
+	border-radius: 1rem;
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+	background-color: rgb(var(--card-bg));
+	border: 1px solid rgb(var(--card-border));
+}
+
+// Button styles
+.btn {
+	padding: 0.75rem 1.5rem;
+	border-radius: 0.5rem;
+	font-weight: 500;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	user-select: none;
+	border: none;
+}
+
+.btn-primary {
+	color: white;
+	box-shadow: 0 10px 15px rgba(96, 165, 250, 0.5);
+	background: linear-gradient(
+		135deg,
+		rgb(var(--primary)),
+		rgb(var(--primary-light))
+	);
+	&:hover {
+		background: linear-gradient(
+			135deg,
+			rgb(var(--primary-dark)),
+			rgb(var(--primary))
+		);
+		box-shadow: 0 15px 20px rgba(59, 130, 246, 0.7);
+	}
+}
+
+.btn-secondary {
+	background: transparent;
+	border: 2px solid rgb(var(--foreground));
+	color: rgb(var(--foreground));
+	backdrop-filter: blur(4px);
+	&:hover {
+		background: rgba(var(--foreground), 0.1);
+	}
+}
+
+// Input styles
+.input {
+	width: 100%;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	background-color: rgb(var(--input-bg));
+	border: 1px solid rgb(var(--input-border));
+	outline: none;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+	&:focus {
+		border-color: rgb(var(--primary));
+		box-shadow: 0 0 0 2px rgba(var(--primary), 0.1);
+	}
+}
+
+// Section styles
+.section {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	background-color: rgb(var(--background));
+	&-alt {
+		background-color: rgb(var(--background-alt));
+	}
+	&-title {
+		font-size: 2.25rem; // 4xl
+		font-weight: 700;
+		text-align: center;
+		margin-bottom: 3rem;
+		background: linear-gradient(
+			135deg,
+			rgb(var(--primary)),
+			rgb(var(--secondary))
+		);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
+}
+
+// Container
+.container {
+	max-width: 112rem; // 7xl ~ 1120px
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	@media (min-width: 640px) {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+	@media (min-width: 1024px) {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
+
+// Link styles
+.link {
+	color: rgb(var(--primary));
+	transition: color 0.3s ease;
+	cursor: pointer;
+	&:hover {
+		color: rgb(var(--primary-dark));
+	}
+}
+
+// Background images
+.bg-hero {
+	/* background-image: url('/hero-bg.jpg'); */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.bg-about {
+	/* background-image: url('/i.webp'); */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
