@@ -6,8 +6,17 @@
 		"contact": "Contact"
 	},
 	"hero": {
-		"title": "Pioneering the Future of Sustainable Energy",
-		"subtitle": "Leading the way in renewable energy solutions and smart grid technology for a sustainable tomorrow",
+		"title": "Welcome to NIPPON GLOBAL ENERGY",
+		"subtitle": "Connecting Japan with the World – One Trade at a Time",
+		"description": "Welcome to NIPPON GLOBAL ENERGY, a Tokyo-based international trading and logistics company that embodies the spirit of Japanese craftsmanship and global business acumen.",
+		"list": {
+			"title": "We specialize in:",
+			"first": "Automotive Supplies – Engine Oil, Tires, Car Parts",
+			"second": "Logistics & Transport – Seamless movement of goods from Japan to Central Asia",
+			"third": "Oil & Gas Solutions – Supplying pipes, drilling and construction equipment for energy projects"
+		},
+		"more": "We are more than just a trading house – we are your trusted business bridge between Japan and emerging markets, especially in Central Asia and the Middle East.",
+		"slogan": "'Our commitment is built on trust, precision, and long-term partnership.'",
 		"cta": {
 			"primary": "Our Services",
 			"secondary": "Contact Us"
@@ -54,11 +63,21 @@
 	},
 	"about": {
 		"title": "About Us",
-		"description": "Nippon Global Energy is a leading provider of sustainable energy solutions, committed to transforming the way we power our world. With over 15 years of experience, we've been at the forefront of renewable energy innovation.",
+		"subtitle": {
+			"first": "The Spirit Behind Our Company",
+			"second": "Who We Are",
+			"third": "Our Vision",
+			"fourth": "Our Values"
+		},
+		"description": {
+			"first": "Founded in the heart of Tokyo, [Your Company Name] is a new-age trading company deeply rooted in traditional Japanese values: Sincerity (Makoto), Harmony (Wa), Discipline (Shitsuke), and Kaizen (Continuous Improvement).",
+			"second": "Our mission is to connect high-quality Japanese products and services with the growing demands of global markets, especially in Central Asia and the Caspian Region."
+		},
 		"stats": {
-			"years": "Years of Experience",
-			"projects": "Projects Completed",
-			"countries": "Countries Served"
+			"first": "Integrity: We do what is right, not what is easy.",
+			"second": "Excellence: Every product and service reflects the precision and quality of Japanese standards.",
+			"third": "Respect: We believe in building long-term, respectful relationships with partners.",
+			"fourth": "Speed with Precision: Fast delivery without compromising quality or accuracy."
 		}
 	},
 	"contact": {
