@@ -24,17 +24,12 @@
 	},
 	"services": {
 		"title": "Our Services",
-		"renewable": {
-			"title": "Renewable Energy",
-			"description": "Solar, wind, and hydroelectric power solutions for sustainable energy generation"
-		},
-		"smartGrid": {
-			"title": "Smart Grid Technology",
-			"description": "Advanced grid management systems for efficient energy distribution"
-		},
-		"storage": {
-			"title": "Energy Storage",
-			"description": "Innovative battery and storage solutions for reliable power supply"
+		"list": {
+			"first": "Product Sourcing & Trading",
+			"second": "Logistics & Freight Forwarding",
+			"third": "Tender & Procurement Support",
+			"fourth": "Custom Product Branding (Private Labeling)",
+			"fiveth": "Consulting for Japanese Companies entering Central Asia"
 		}
 	},
 	"solarSystem": {
