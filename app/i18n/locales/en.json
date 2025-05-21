@@ -29,31 +29,44 @@
 			"second": "Logistics & Freight Forwarding",
 			"third": "Tender & Procurement Support",
 			"fourth": "Custom Product Branding (Private Labeling)",
-			"fiveth": "Consulting for Japanese Companies entering Central Asia"
+			"fifth": "Consulting for Japanese Companies entering Central Asia"
 		}
 	},
 	"solarSystem": {
-		"rooftop": {
-			"title": "How does solar rooftop works?",
-			"benefits": [
-				"Systems are simplifying and producing economical alternatives to expensive and complex systems which are mounted on the roof.",
-				"The existing area is utilized to generate power which saves a lot of sum on sacrificing valuable money over real estate.",
-				"These solar carports increase energy production vastly during your project of clean energy.",
-				"Little to zero maintenance is required by these permanent solar carports and trellis.",
-				"The repair and maintenance service is easily accessible due to the designs and structure.",
-				"The general public and everyday users can be benefited from shaded car parking."
-			]
-		},
-		"carports": {
-			"title": "Benefits of Solar Carports",
-			"benefits": [
-				"Systems are simplifying and producing economical alternatives to expensive and complex systems which are mounted on the roof",
-				"The existing area is utilized to generate power which saves a lot of sum on sacrificing valuable money over real estate.",
-				"These solar carports increase energy production vastly during your project of clean energy.",
-				"Little to zero maintenance is required by these permanent solar carports and trellis.",
-				"The repair and maintenance service is easily accessible due to the designs and structure.",
-				"The general public and everyday users can be benefited from shaded car parking."
-			]
+		"title": "Our Businesses",
+		"businesses": {
+			"first": {
+				"name": "Automotive Division",
+				"text1": "We specialize in the supply and export of:",
+				"text2": "Our products are distributed to wholesalers, service stations, and fleets across Turkmenistan, Uzbekistan, Kazakhstan, and beyond.",
+				"list": {
+					"first": "Engine Oil (Synthetic, Semi-Synthetic, Mineral – passenger and commercial use)",
+					"second": "Tires (TBR, PCR, OTR – All major brands & private labels)",
+					"third": "Car Parts (OEM & aftermarket parts for Japanese, European, and Korean vehicles)"
+				}
+			},
+			"second": {
+				"name": "Logistics & Freight Solutions",
+				"text1": "We operate an integrated logistics system that ensures reliable delivery from Japan to Central Asia.",
+				"text2": "Whether you’re moving one container or entire projects – we make it efficient, secure, and cost-effective.",
+				"list": {
+					"first": "Multimodal Transport: Sea + Land freight to landlocked regions",
+					"second": "Customs Clearance Assistance",
+					"third": "Warehousing & Consolidation in Japan",
+					"fourth": "End-to-End Supply Chain Management"
+				}
+			},
+			"third": {
+				"name": "Oil & Gas Division",
+				"text1": "We serve major oil and gas players in Turkmenistan and Central Asia with:",
+				"text2": "We have built strong local partnerships to support infrastructure and energy development projects across the region.",
+				"list": {
+					"first": "Oilfield Equipment: Drilling rigs, pumps, valves, and tools",
+					"second": "Pipes & Tubular Products: API 5L, OCTG, seamless and welded",
+					"third": "Construction Equipment: Cranes, compressors, graders, and support machinery",
+					"fourth": "Procurement & Tender Management: We handle government tenders and EPC project sourcing"
+				}
+			}
 		}
 	},
 	"about": {
@@ -65,8 +78,9 @@
 			"fourth": "Our Values"
 		},
 		"description": {
-			"first": "Founded in the heart of Tokyo, [Your Company Name] is a new-age trading company deeply rooted in traditional Japanese values: Sincerity (Makoto), Harmony (Wa), Discipline (Shitsuke), and Kaizen (Continuous Improvement).",
-			"second": "Our mission is to connect high-quality Japanese products and services with the growing demands of global markets, especially in Central Asia and the Caspian Region."
+			"first": "Founded in the heart of Tokyo, NIPPON GLOBAL ENERGY is a new-age trading company deeply rooted in traditional Japanese values: Sincerity (Makoto), Harmony (Wa), Discipline (Shitsuke), and Kaizen (Continuous Improvement).",
+			"second": "Our mission is to connect high-quality Japanese products and services with the growing demands of global markets, especially in Central Asia and the Caspian Region.",
+			"third": "To be a reliable and innovative bridge between Japan and the world, facilitating commerce that creates mutual value and long-term prosperity."
 		},
 		"stats": {
 			"first": "Integrity: We do what is right, not what is easy.",
@@ -77,11 +91,11 @@
 	},
 	"contact": {
 		"title": "Contact Us",
-		"infoTitle": "Contact Information",
+		"infoTitle": "Let’s build something great together.",
 		"info": {
 			"address": {
 				"title": "Address",
-				"value": "123 Energy Street, Tokyo, Japan"
+				"value": "Head Office: Tokyo, Japan"
 			},
 			"phone": {
 				"title": "Phone",
@@ -106,6 +120,22 @@
 			"success": "Thank you for your message! We'll get back to you soon.",
 			"error": "Something went wrong. Please try again later."
 		}
+	},
+	"whyChooseUs": {
+		"title": "Why Choose Us?",
+		"first": "Tokyo-Based HQ: Access to Japan’s manufacturing network",
+		"second": "Bilingual Team: English, Japanese, Russian, and Turkmen support",
+		"third": "Regional Expertise: Deep operational presence in Central Asia",
+		"fourth": "Trusted Suppliers: OEM-certified products and equipment",
+		"fifth": "Turnkey Solutions: From sourcing to delivery, we manage everything"
+	},
+	"partnersBrands": {
+		"title": "Partners & Brands",
+		"description": "We work with leading global and Japanese manufacturers, and are open to new partnerships in:",
+		"first": "Automotive Lubricants & Parts",
+		"second": "Oilfield Equipment",
+		"third": "Japanese Industrial Tools",
+		"fourth": "Construction & Civil Equipment"
 	},
 	"footer": {
 		"description": "Leading the way in sustainable energy solutions for a better tomorrow.",

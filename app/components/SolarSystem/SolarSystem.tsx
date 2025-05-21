@@ -6,49 +6,83 @@ import styles from './SolarSystem.module.scss';
 export default function SolarSystem() {
 	const { t } = useLanguage();
 
-	const solarRooftop = Array(6).fill(null);
+	const solarRooftop = Array(3).fill(null);
 	const solarCarports = Array(6).fill(null);
 
 	return (
-		<section className={`${styles.section} ${styles.dark}`}>
+		<section className={`${styles.section} `}>
 			<div className={styles.container}>
-				<div
-					className={`${styles.flexRowResponsive} ${styles.card} ${styles.dark}`}
-				>
+				<div className={`${styles.flexRowResponsive} ${styles.card} }`}>
 					<div>
 						<h2 className={styles.titleLarge}>
-							{t('solarSystem.rooftop.title')}
+							{t('solarSystem.businesses.first.name')}
 						</h2>
 						<div className={styles.videoWrapper}>
-							<video
-								className={styles.video}
-								src='/energy-solar2.mp4'
-								autoPlay
-								muted
-								loop
-							/>
+							<img className={styles.video} src='/castol.jpg' alt='Castrol' />
 						</div>
 					</div>
 
-					<ul className={`${styles.list} ${styles.dark}`}>
-						{solarRooftop.map((_, i) => (
-							<li key={i}>{t(`solarSystem.rooftop.benefits.${i}`)}</li>
-						))}
-					</ul>
+					<div>
+						<p>{t(`solarSystem.businesses.first.text1`)}</p>
+
+						<ul className={`${styles.list} `}>
+							<li>{t(`solarSystem.businesses.first.list.first`)}</li>
+							<li>{t(`solarSystem.businesses.first.list.second`)}</li>
+							<li>{t(`solarSystem.businesses.first.list.third`)}</li>
+						</ul>
+
+						<p>{t(`solarSystem.businesses.first.text2`)}</p>
+					</div>
 				</div>
 
 				<div className={`${styles.flexRowResponsive} ${styles.secondaryCard}`}>
 					<div className={styles.dark}>
 						<h2 className={styles.titleLarge}>
-							{t('solarSystem.carports.title')}
+							{t('solarSystem.businesses.second.name')}
 						</h2>
-						<ul className={`${styles.list} ${styles.dark}`}>
-							{solarCarports.map((_, i) => (
-								<li key={i}>{t(`solarSystem.carports.benefits.${i}`)}</li>
-							))}
+
+						<div>
+							<p>{t(`solarSystem.businesses.second.text1`)}</p>
+							<ul className={`${styles.list} `}>
+								<li>{t(`solarSystem.businesses.second.list.first`)}</li>
+								<li>{t(`solarSystem.businesses.second.list.second`)}</li>
+								<li>{t(`solarSystem.businesses.second.list.third`)}</li>
+								<li>{t(`solarSystem.businesses.second.list.fourth`)}</li>
+							</ul>
+							<p>{t(`solarSystem.businesses.second.text2`)}</p>
+						</div>
+					</div>
+					<img
+						className={styles.image}
+						src='https://sun-asia.ru/wp-content/webp-express/webp-images/uploads/morskie-kontejnernye-perevozki.jpg.webp'
+						alt='Solar Carport'
+					/>
+				</div>
+
+				<div className={`${styles.flexRowResponsive} ${styles.card} `}>
+					<div>
+						<h2 className={styles.titleLarge}>
+							{t('solarSystem.businesses.third.name')}
+						</h2>
+						<div className={styles.videoWrapper}>
+							<img
+								className={styles.video}
+								src='https://pandapipe.com/wp-content/uploads/2023/10/api-5l-carbon-steel-line-pipe-1024x695.webp'
+							/>
+						</div>
+						<p>{t(`solarSystem.businesses.third.text2`)}</p>
+					</div>
+
+					<div>
+						<p>{t(`solarSystem.businesses.third.text1`)}</p>
+
+						<ul className={`${styles.list} `}>
+							<li>{t(`solarSystem.businesses.third.list.first`)}</li>
+							<li>{t(`solarSystem.businesses.third.list.second`)}</li>
+							<li>{t(`solarSystem.businesses.third.list.third`)}</li>
+							<li>{t(`solarSystem.businesses.third.list.fourth`)}</li>
 						</ul>
 					</div>
-					<img className={styles.image} src='/solar.gif' alt='Solar Carport' />
 				</div>
 			</div>
 		</section>
