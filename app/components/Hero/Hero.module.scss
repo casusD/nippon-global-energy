@@ -3,11 +3,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	// background: linear-gradient(
-	// 	135deg,
-	// 	var(--background) 0%,
-	// 	var(--background-alt) 100%
-	// );
 	background-color: var(--background);
 	color: var(--text-color);
 	position: relative;
@@ -183,4 +178,111 @@
 	left: 50%;
 	transform: translateX(-50%);
 	animation: bounce 2s infinite;
+}
+
+/* 📱 Адаптация для планшетов (max-width: 1024px) */
+@media (max-width: 1024px) {
+	.description {
+		gap: 2rem;
+
+		p {
+			font-size: 26px;
+			margin-top: 2.5rem;
+		}
+	}
+
+	.list {
+		gap: 2rem;
+		font-size: 18px;
+
+		h2 {
+			font-size: 26px;
+		}
+	}
+
+	.more {
+		width: 65%;
+		padding: 1.8rem;
+
+		p {
+			font-size: 1.05rem;
+		}
+
+		h3 {
+			font-size: 1.4rem;
+		}
+	}
+}
+
+/* 📱 Адаптация для телефонов (max-width: 768px) */
+@media (max-width: 768px) {
+	.description {
+		flex-direction: column;
+		gap: 1.5rem;
+		margin-top: 3rem;
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 2rem;
+
+		p {
+			font-size: 22px;
+			margin-top: 1.5rem;
+		}
+	}
+
+	.list {
+		flex-direction: column;
+		gap: 1.5rem;
+		font-size: 16px;
+
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 4rem;
+
+		h2 {
+			font-size: 24px;
+		}
+	}
+
+	.more {
+		width: 80%;
+		padding: 1.5rem;
+
+		p {
+			font-size: 1rem;
+		}
+
+		h3 {
+			font-size: 1.3rem;
+		}
+	}
+}
+
+/* 📱 Адаптация для маленьких телефонов (max-width: 480px) */
+@media (max-width: 480px) {
+	.description p {
+		font-size: 18px;
+		margin-top: 1rem;
+	}
+
+	.list {
+		font-size: 14px;
+
+		h2 {
+			font-size: 20px;
+		}
+	}
+
+	.more {
+		width: 95%;
+		padding: 1.2rem;
+
+		p {
+			font-size: 0.95rem;
+		}
+
+		h3 {
+			font-size: 1.2rem;
+		}
+	}
 }

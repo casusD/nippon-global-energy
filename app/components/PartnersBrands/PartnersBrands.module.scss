@@ -43,4 +43,38 @@
 			}
 		}
 	}
+
+	// 📱 Адаптация для мобильных
+	@media (max-width: 768px) {
+		padding: 48px 16px;
+
+		.container {
+			max-width: 100%;
+		}
+
+		.title {
+			font-size: 28px;
+			margin-bottom: 20px;
+		}
+
+		.description {
+			font-size: 16px;
+			margin-bottom: 24px;
+		}
+
+		.list {
+			width: 80%;
+			margin: 0 auto;
+			li {
+				font-size: 16px;
+				padding: 10px 0;
+
+				&::before {
+					font-size: 20px;
+					width: 20px;
+					margin-left: -20px;
+				}
+			}
+		}
+	}
 }

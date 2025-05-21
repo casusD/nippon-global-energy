@@ -53,3 +53,29 @@
 	font-size: 18px;
 	color: var(--text-color);
 }
+
+// 📱 Адаптация для мобильных устройств
+@media (max-width: 480px) {
+	.section {
+		padding: 48px 16px;
+	}
+
+	.title {
+		font-size: 28px;
+		margin-bottom: 24px;
+	}
+
+	.item {
+		padding: 16px;
+		border-radius: 12px;
+	}
+
+	.icon {
+		font-size: 24px;
+		margin-right: 12px;
+	}
+
+	.text {
+		font-size: 16px;
+	}
+}

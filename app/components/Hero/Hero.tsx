@@ -12,14 +12,6 @@ export default function Hero() {
 				<div className={styles.content}>
 					<h1 className={styles.title}>{t('hero.title')}</h1>
 					<p className={styles.subtitle}>{t('hero.subtitle')}</p>
-					{/* <div className={styles.cta}>
-						<Link href='#services' className={styles.primaryButton}>
-							{t('hero.cta.primary')}
-						</Link>
-						<Link href='#contact' className={styles.secondaryButton}>
-							{t('hero.cta.secondary')}
-						</Link>
-					</div> */}
 				</div>
 
 				<div className={styles.description}>
