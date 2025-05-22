@@ -1,7 +1,7 @@
 'use client';
 
 import { useLanguage } from '@/context/LanguageContext';
-import { motion, useInView } from 'framer-motion';
+import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import styles from './SolarSystem.module.scss';
 
@@ -38,105 +38,103 @@ export default function SolarSystem() {
 	return (
 		<section className={`${styles.section} `}>
 			<div className={styles.container}>
-				<motion.div
+				{/* <motion.div
 					ref={ref1}
 					initial='hidden'
 					animate={isInView1 ? 'visible' : 'hidden'}
 					variants={animationVariants}
 					transition={{ duration: 1, ease: 'easeOut' }}
-				>
-					<div className={`${styles.flexRowResponsive} ${styles.card} }`}>
-						<div>
-							<h2 className={styles.titleLarge}>
-								{t('solarSystem.businesses.first.name')}
-							</h2>
-							<div className={styles.videoWrapper}>
-								<img
-									className={styles.video}
-									src='/solarSystem_first.png'
-									alt='Castrol'
-								/>
-							</div>
-						</div>
-
-						<div>
-							<p>{t(`solarSystem.businesses.first.text1`)}</p>
-
-							<ul className={`${styles.list} `}>
-								<li>{t(`solarSystem.businesses.first.list.first`)}</li>
-								<li>{t(`solarSystem.businesses.first.list.second`)}</li>
-								<li>{t(`solarSystem.businesses.first.list.third`)}</li>
-							</ul>
-
-							<p>{t(`solarSystem.businesses.first.text2`)}</p>
+				> */}
+				<div className={`${styles.flexRowResponsive} ${styles.card} }`}>
+					<div>
+						<h2 className={styles.titleLarge}>
+							{t('solarSystem.businesses.first.name')}
+						</h2>
+						<div style={{ marginTop: '4rem' }} className={styles.videoWrapper}>
+							<img
+								className={styles.video}
+								src='/solarSystem_first.png'
+								alt='Castrol'
+							/>
 						</div>
 					</div>
-				</motion.div>
 
-				<motion.div
+					<div>
+						<p>{t(`solarSystem.businesses.first.text1`)}</p>
+
+						<ul className={`${styles.list} `}>
+							<li>{t(`solarSystem.businesses.first.list.first`)}</li>
+							<li>{t(`solarSystem.businesses.first.list.second`)}</li>
+							<li>{t(`solarSystem.businesses.first.list.third`)}</li>
+						</ul>
+
+						<p>{t(`solarSystem.businesses.first.text2`)}</p>
+					</div>
+				</div>
+				{/* </motion.div> */}
+
+				{/* <motion.div
 					ref={ref2}
 					initial='hidden'
 					animate={isInView2 ? 'visible' : 'hidden'}
 					variants={animationVariants}
 					transition={{ duration: 1, ease: 'easeOut' }}
-				>
-					<div
-						className={`${styles.flexRowResponsive} ${styles.secondaryCard}`}
-					>
-						<div className={styles.dark}>
-							<h2 className={styles.titleLarge}>
-								{t('solarSystem.businesses.second.name')}
-							</h2>
+				> */}
+				<div className={`${styles.flexRowResponsive} ${styles.secondaryCard}`}>
+					<div className={styles.dark}>
+						<h2 className={styles.titleLarge}>
+							{t('solarSystem.businesses.second.name')}
+						</h2>
 
-							<div>
-								<p>{t(`solarSystem.businesses.second.text1`)}</p>
-								<ul className={`${styles.list} `}>
-									<li>{t(`solarSystem.businesses.second.list.first`)}</li>
-									<li>{t(`solarSystem.businesses.second.list.second`)}</li>
-									<li>{t(`solarSystem.businesses.second.list.third`)}</li>
-									<li>{t(`solarSystem.businesses.second.list.fourth`)}</li>
-								</ul>
-								<p>{t(`solarSystem.businesses.second.text2`)}</p>
-							</div>
+						<div>
+							<p>{t(`solarSystem.businesses.second.text1`)}</p>
+							<ul className={`${styles.list} `}>
+								<li>{t(`solarSystem.businesses.second.list.first`)}</li>
+								<li>{t(`solarSystem.businesses.second.list.second`)}</li>
+								<li>{t(`solarSystem.businesses.second.list.third`)}</li>
+								<li>{t(`solarSystem.businesses.second.list.fourth`)}</li>
+							</ul>
+							<p>{t(`solarSystem.businesses.second.text2`)}</p>
 						</div>
-						<img
-							className={styles.image}
-							src='/solarSystem_second.png'
-							alt='Solar Carport'
-						/>
 					</div>
-				</motion.div>
+					<img
+						className={styles.image}
+						src='/solarSystem_second.png'
+						alt='Solar Carport'
+					/>
+				</div>
+				{/* </motion.div> */}
 
-				<motion.div
+				{/* <motion.div
 					ref={ref3}
 					initial='hidden'
 					animate={isInView3 ? 'visible' : 'hidden'}
 					variants={animationVariants}
 					transition={{ duration: 1, ease: 'easeOut' }}
-				>
-					<div className={`${styles.flexRowResponsive} ${styles.card} `}>
-						<div>
-							<h2 className={styles.titleLarge}>
-								{t('solarSystem.businesses.third.name')}
-							</h2>
-							<div className={styles.videoWrapper}>
-								<img className={styles.video} src='/solarSystem_third.png' />
-							</div>
-							<p>{t(`solarSystem.businesses.third.text2`)}</p>
+				> */}
+				<div className={`${styles.flexRowResponsive} ${styles.card} `}>
+					<div>
+						<h2 className={styles.titleLarge}>
+							{t('solarSystem.businesses.third.name')}
+						</h2>
+						<div className={styles.videoWrapper}>
+							<img className={styles.video} src='/solarSystem_third.png' />
 						</div>
-
-						<div>
-							<p>{t(`solarSystem.businesses.third.text1`)}</p>
-
-							<ul className={`${styles.list} `}>
-								<li>{t(`solarSystem.businesses.third.list.first`)}</li>
-								<li>{t(`solarSystem.businesses.third.list.second`)}</li>
-								<li>{t(`solarSystem.businesses.third.list.third`)}</li>
-								<li>{t(`solarSystem.businesses.third.list.fourth`)}</li>
-							</ul>
-						</div>
+						<p>{t(`solarSystem.businesses.third.text2`)}</p>
 					</div>
-				</motion.div>
+
+					<div>
+						<p>{t(`solarSystem.businesses.third.text1`)}</p>
+
+						<ul className={`${styles.list} `}>
+							<li>{t(`solarSystem.businesses.third.list.first`)}</li>
+							<li>{t(`solarSystem.businesses.third.list.second`)}</li>
+							<li>{t(`solarSystem.businesses.third.list.third`)}</li>
+							<li>{t(`solarSystem.businesses.third.list.fourth`)}</li>
+						</ul>
+					</div>
+				</div>
+				{/* </motion.div> */}
 			</div>
 		</section>
 	);

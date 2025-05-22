@@ -1,7 +1,7 @@
 'use client';
 
 import { useLanguage } from '@/context/LanguageContext';
-import { motion, useInView } from 'framer-motion';
+import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import styles from './About.module.scss';
 
@@ -46,38 +46,38 @@ export default function About() {
 					<p className={styles.description}>{t('about.subtitle.first')}</p>
 
 					<div className={styles.stats}>
-						<motion.div
+						{/* <motion.div
 							ref={ref1}
 							initial='hidden'
 							animate={isInView1 ? 'visible' : 'hidden'}
 							variants={animationVariants1}
 							transition={{ duration: 1, ease: 'easeOut' }}
-						>
-							<div className={styles.weAre}>
-								<h3>{t('about.subtitle.second')}</h3>
-								<p>{t('about.description.first')}</p>
+						> */}
+						<div className={styles.weAre}>
+							<h3>{t('about.subtitle.second')}</h3>
+							<p>{t('about.description.first')}</p>
 
-								<span>{t('about.description.second')}</span>
-							</div>
-						</motion.div>
-						<motion.div
+							<span>{t('about.description.second')}</span>
+						</div>
+						{/* </motion.div> */}
+						{/* <motion.div
 							ref={ref1}
 							initial='hidden'
 							animate={isInView1 ? 'visible' : 'hidden'}
 							variants={animationVariants2}
 							transition={{ duration: 1, ease: 'easeOut' }}
-						>
-							<div className={styles.weAre}>
-								<h3>{t('about.subtitle.fourth')}</h3>
-								{/* <p>{t('about.description.third')}</p> */}
-								<ul>
-									<li>{t('about.stats.first')}</li>
-									<li>{t('about.stats.second')}</li>
-									<li>{t('about.stats.third')}</li>
-									<li>{t('about.stats.fourth')}</li>
-								</ul>
-							</div>
-						</motion.div>
+						> */}
+						<div className={styles.weAre}>
+							<h3>{t('about.subtitle.fourth')}</h3>
+							{/* <p>{t('about.description.third')}</p> */}
+							<ul>
+								<li>{t('about.stats.first')}</li>
+								<li>{t('about.stats.second')}</li>
+								<li>{t('about.stats.third')}</li>
+								<li>{t('about.stats.fourth')}</li>
+							</ul>
+						</div>
+						{/* </motion.div> */}
 					</div>
 
 					<div className={styles.vision}>

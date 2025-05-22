@@ -60,26 +60,26 @@ export default function WhyChooseUs() {
 		<section className={styles.section}>
 			<div className={styles.container}>
 				<h2 className={styles.title}>{t('whyChooseUs.title')}</h2>
-				<motion.div
+				{/* <motion.div
 					ref={ref1}
 					initial='hidden'
 					animate={isInView1 ? 'visible' : 'hidden'}
 					variants={animationVariants1}
 					transition={{ duration: 1, ease: 'easeOut' }}
-				>
-					<div className={styles.list}>
-						{points.map((point, index) => (
-							<motion.div
-								key={index}
-								className={styles.item}
-								whileHover={{ scale: 1.02 }}
-							>
-								<span className={styles.icon}>{point.icon}</span>
-								<p className={styles.text}>{point.text}</p>
-							</motion.div>
-						))}
-					</div>
-				</motion.div>
+				> */}
+				<div className={styles.list}>
+					{points.map((point, index) => (
+						<motion.div
+							key={index}
+							className={styles.item}
+							whileHover={{ scale: 1.02 }}
+						>
+							<span className={styles.icon}>{point.icon}</span>
+							<p className={styles.text}>{point.text}</p>
+						</motion.div>
+					))}
+				</div>
+				{/* </motion.div> */}
 			</div>
 		</section>
 	);

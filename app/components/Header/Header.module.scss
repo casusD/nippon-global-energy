@@ -1,9 +1,16 @@
-.header {
+.section {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	z-index: 1;
+	background-color: var(--header-bg);
 	position: fixed;
 	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 1000;
+}
+
+.header {
+	max-width: 1250px;
+	width: 100%;
 
 	background-color: var(--header-bg);
 	transition: all 0.3s ease;
@@ -104,8 +111,19 @@
 		display: none;
 	}
 
+	.actions {
+		display: none;
+	}
+
 	.menuButton {
 		display: flex;
+	}
+
+	.mobileNav {
+		div {
+			display: flex;
+			justify-content: center;
+		}
 	}
 }
 
@@ -123,10 +141,15 @@
 @media (max-width: 480px) {
 	.header {
 		padding: 0.6rem 1rem;
+		width: 100%;
+	}
+
+	.logo img {
+		width: 100px;
 	}
 
 	.actions {
-		gap: 0.5rem;
+		display: none;
 	}
 
 	.mobileMenu {
@@ -135,6 +158,11 @@
 
 	.mobileNav {
 		gap: 0.75rem;
+
+		div {
+			display: flex;
+			justify-content: center;
+		}
 	}
 
 	.mobileNavLink {

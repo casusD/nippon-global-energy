@@ -79,7 +79,7 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 	.about {
 		padding: 3rem 0;
 	}
@@ -91,6 +91,10 @@
 	.stats {
 		grid-template-columns: 1fr;
 		gap: 1.5rem;
+
+		div {
+			height: fit-content;
+		}
 	}
 
 	.weAre {
@@ -121,6 +125,10 @@
 
 	.stats {
 		gap: 1rem;
+
+		div {
+			height: fit-content;
+		}
 	}
 
 	.weAre {

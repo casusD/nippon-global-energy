@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import Header from './components/Header/Header';
 import { LanguageProvider } from './context/LanguageContext';
 import { ThemeProvider } from './context/ThemeContext';
 import './globals.scss';
@@ -26,7 +25,7 @@ export default function RootLayout({
 				<ThemeProvider>
 					<LanguageProvider>
 						<div className='min-h-screen flex flex-col'>
-							<Header />
+							{/* <Header /> */}
 							<main className='flex-grow pt-20'>{children}</main>
 						</div>
 					</LanguageProvider>

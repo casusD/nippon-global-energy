@@ -18,7 +18,7 @@ export default function Home() {
 	}, []);
 
 	return (
-		<main className='min-h-screen bg-black text-white'>
+		<main className='min-h-screen bg-black text-white max-w-full mr-auto ml-auto mt-0 mb-0'>
 			<Header />
 			<Hero />
 			<SolarSystem />
