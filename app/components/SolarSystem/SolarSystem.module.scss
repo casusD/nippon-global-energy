@@ -42,6 +42,8 @@
 	margin-bottom: 5rem;
 	color: var(--text-color);
 
+	box-shadow: 0 0 6px 4px var(--shadow-color);
+
 	@media (min-width: 768px) {
 		width: 70%;
 	}

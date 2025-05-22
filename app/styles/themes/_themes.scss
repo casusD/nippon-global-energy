@@ -19,6 +19,7 @@
 	--header-bg: #{light.$header-bg};
 	--header-border: #{light.$header-border};
 	--text-color: #{light.$text-color};
+	--shadow-color: #{light.$shadow-color};
 }
 
 .dark-theme {
@@ -39,4 +40,5 @@
 	--header-bg: #{dark.$header-bg};
 	--header-border: #{dark.$header-border};
 	--text-color: #{dark.$text-color};
+	--shadow-color: #{dark.$shadow-color};
 }

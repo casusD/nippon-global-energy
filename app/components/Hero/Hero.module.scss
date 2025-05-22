@@ -115,6 +115,8 @@
 }
 
 .description {
+	width: 80%;
+	margin: 0 auto;
 	display: flex;
 	gap: 2.5rem;
 	justify-content: center;
@@ -129,7 +131,9 @@
 }
 
 .list {
+	margin: 0 auto;
 	display: flex;
+	width: 80%;
 	gap: 2.5rem;
 	justify-content: center;
 	animation: slideUp 1s ease-out;
@@ -141,7 +145,7 @@
 	}
 
 	ul {
-		margin-top: 1rem;
+		margin-top: 2rem;
 		list-style: disc;
 	}
 }
@@ -154,6 +158,8 @@
 	margin-top: 4rem;
 	text-align: justify;
 	border-radius: 8px;
+
+	box-shadow: 0 0 6px 4px var(--shadow-color);
 
 	p {
 		margin-bottom: 1rem;
