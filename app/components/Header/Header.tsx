@@ -1,6 +1,7 @@
 'use client';
 
 import { useLanguage } from '@/context/LanguageContext';
+import { useTheme } from '@/context/ThemeContext';
 import { Menu } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -8,8 +9,10 @@ import { useState } from 'react';
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
 import styles from './Header.module.scss';
+
 export default function Header() {
-	const { t, language, setLanguage } = useLanguage();
+	const { t } = useLanguage();
+	const { theme } = useTheme();
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -24,7 +27,7 @@ export default function Header() {
 						className={styles.logo}
 					>
 						<Image
-							src='/logo.png'
+							src={theme === 'light' ? '/lightModeLogo.png' : '/logo.png'}
 							alt='Nippon Global Energy'
 							width={150}
 							height={100}

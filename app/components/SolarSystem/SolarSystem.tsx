@@ -99,7 +99,7 @@ export default function SolarSystem() {
 					</div>
 					<img
 						className={styles.image}
-						src='/solarSystem_second.png'
+						src='/exportImport.jpg'
 						alt='Solar Carport'
 					/>
 				</div>
