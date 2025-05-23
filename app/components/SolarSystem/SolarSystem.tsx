@@ -50,7 +50,7 @@ export default function SolarSystem() {
 						<h2 className={styles.titleLarge}>
 							{t('solarSystem.businesses.first.name')}
 						</h2>
-						<div style={{ marginTop: '4rem' }} className={styles.videoWrapper}>
+						<div className={styles.videoWrapper}>
 							<img
 								className={styles.video}
 								src='/solarSystem_first.png'
@@ -120,8 +120,10 @@ export default function SolarSystem() {
 						<div className={styles.videoWrapper}>
 							<img className={styles.video} src='/solarSystem_third.png' />
 						</div>
-						<p>{t(`solarSystem.businesses.third.text2`)}</p>
 					</div>
+					<p className={styles.floatText}>
+						{t(`solarSystem.businesses.third.text2`)}
+					</p>
 
 					<div>
 						<p>{t(`solarSystem.businesses.third.text1`)}</p>

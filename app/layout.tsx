@@ -1,10 +1,26 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Montserrat, Poppins, Space_Grotesk } from 'next/font/google';
 import { LanguageProvider } from './context/LanguageContext';
 import { ThemeProvider } from './context/ThemeContext';
 import './globals.scss';
 
-const inter = Inter({ subsets: ['latin'] });
+const montserrat = Montserrat({
+	subsets: ['latin'],
+	weight: ['400', '500', '600', '700'],
+	variable: '--font-montserrat',
+});
+
+const spaceGrotesk = Space_Grotesk({
+	subsets: ['latin'],
+	weight: ['500', '600', '700'],
+	variable: '--font-space-grotesk',
+});
+
+const poppins = Poppins({
+	subsets: ['latin'],
+	weight: ['500', '600', '700'],
+	variable: '--font-poppins',
+});
 
 export const metadata: Metadata = {
 	title: 'Nippon Global Energy',
@@ -21,7 +37,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en' suppressHydrationWarning>
-			<body className={inter.className}>
+			<body
+				className={`${montserrat.variable} ${spaceGrotesk.variable} ${poppins.variable}`}
+			>
 				<ThemeProvider>
 					<LanguageProvider>
 						<div className='min-h-screen flex flex-col'>

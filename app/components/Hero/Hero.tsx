@@ -11,13 +11,6 @@ export default function Hero() {
 	return (
 		<AnimatePresence>
 			<section id='hero' className={styles.hero}>
-				{/* <motion.div
-					key='appearingElement' // Обязательный key для AnimatePresence
-					initial={{ opacity: 0, y: 150 }}
-					animate={{ opacity: 1, y: 0 }}
-					exit={{ opacity: 0, y: 50 }} // Анимация при удалении элемента
-					transition={{ duration: 1, ease: 'easeOut' }}
-				> */}
 				<div className={styles.container}>
 					<div className={styles.content}>
 						<h1 className={styles.title}>{t('hero.title')}</h1>
@@ -59,7 +52,6 @@ export default function Hero() {
 						<h3>{t('hero.slogan')}</h3>
 					</div>
 				</div>
-				{/* </motion.div> */}
 			</section>
 		</AnimatePresence>
 	);
